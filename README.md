@@ -13,7 +13,7 @@ This plugin will address those concerns, hopefully.
 
 ## Installation
 ```
-cordova plugin add cordova-plugin-video-editor
+cordova plugin add https://github.com/zhangjianying/cordova-plugin-video-editor.git
 ```
 `VideoEditor` and `VideoEditorOptions` will be available in the window after deviceready.
 
