@@ -41,7 +41,9 @@ VideoEditor.prototype.trim = function(success, error, options) {
 VideoEditor.prototype.createThumbnail = function(success, error, options) {
   exec(success, error, pluginName, 'createThumbnail', [options]);
 };
-
+VideoEditor.prototype.deleteFile = function(success, error, options) {
+  exec(success, error, pluginName, 'deleteFile', [options]);
+};
 VideoEditor.prototype.getVideoInfo = function(success, error, options) {
   exec(success, error, pluginName, 'getVideoInfo', [options]);
 };

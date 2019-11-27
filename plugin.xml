@@ -19,8 +19,14 @@
         <engine name="cordova" version=">=3.0.0" />
     </engines>
 
+	 <dependency id="cordova-plugin-media-capture" />
+
     <!-- android -->
     <platform name="android">
+        <edit-config file="AndroidManifest.xml" target="/manifest/uses-sdk" mode="merge">
+            <uses-sdk android:minSdkVersion="18" android:maxSdkVersion="28" />
+        </edit-config>
+
         <config-file target="config.xml" parent="/*">
             <feature name="VideoEditor">
                 <param name="android-package" value="org.apache.cordova.videoeditor.VideoEditor" />
